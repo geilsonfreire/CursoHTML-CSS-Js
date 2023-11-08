@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <H1>IMG Dinâmica</H1>
+    <p>Abrir minha página em varios dispositivos diferente de forma que as imagens se ajuste automaticamente</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Fundo-P.png" type="imagem/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Fundo-M.png" type="imagem/png">
+        <img src="imagens/Fundo-G.png" alt="IMG Flexivel">
+    </picture>
+
+</body>
+</html>
