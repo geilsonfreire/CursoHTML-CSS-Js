@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <H1>Adicionando imagens dinâmica na minha página HTML5</H1>
+    <p>Abrir minha página em varios dispositivos diferente de forma que as imagens se ajuste automaticamente</p>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="imagens/fundo-m.pmg" type="imagem/png">
+        <source media="(min-width:465px)" srcset="imagens/fundo-p.png" type="imagem/png">
+        <img src="imagens/fundo-g.png" alt="imagem flexivel">
+        
+    </picture>
+
+
+    <h1>Adicionando  e reproduzindo audios na minha página HTML5</h1>
+    <!--<audio src="audios/jemegri.mp3" controls autoplay></audio>-->
+    <!--Formatos compativeis com navegadores (MP3 / WAV / OGG)-->
+
+    <audio preload="metadata" controls autoplay>
+        <source src="audios/jemegri.mp3" type="audio/mpeg">
+        <source src="audios/jemegri.ogg" type="audio/ogg">
+        <source src="audios/jemegri.wav" type="audio/wav"> <!--Arquivo do tipo WAV muito pesado-->
+        <p>Caso o audio não for reproduzido <a href="audios/jemegri.mp3">Clique Aqui para baixar o audio</a></p>
+    </audio>
+    
+
+</body>
+</html>
