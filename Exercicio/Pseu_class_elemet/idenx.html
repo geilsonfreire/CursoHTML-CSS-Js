@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psue_Classe&Elemente</title>
+
+    <style type="text/css">
+        p#sem_pseudo_classe {
+            font-size: 12px;
+            color: black;
+        }
+
+        p#sem_pseudo_classe span.primeira_letra_fonte_maior {
+            font-size: 26px;
+            color: blue;
+        }
+
+        p#com_pseudo_classe {
+            font-size: 12px;
+            color: black;
+        }
+
+        p#com_pseudo_classe::first-letter {
+            font-size: 26px;
+            color: red;
+        }
+
+        li:first-child{color: red;}/*Estilizando LI selecionando o primeiro item da lista*/
+
+        li:hover{text-decoration: underline;} /*Sumblinhando ao passar o mouse*/
+
+        .negrito{font-weight: bold;}
+        .negrito::after{content: "[*]";}
+        p::first-letter{font-size: 200%; color: red;}
+
+    </style>
+</head>
+
+<body>
+    <p id="sem_pseudo_classe"></p>
+    <span class="primeira_letra_fonte_maior">T</span>exto do parágrafo sem Pseudo_classe.</p>
+    <p id="com_pseudo_classe">Texto do parágrafo com com_pseudo_classe</p>
+
+<h2>IMPLEMENTANDO PSEUDOCLASSE</h2>
+<ul>
+    <li>Alfa</li>
+    <li>Beta
+        <ol>
+            <li>Beta X</li>
+            <li>Beta Y</li>
+            <li>Beta Z</li>
+        </ol>
+    <li>Gama</li>
+</ul>
+
+<h2>IMPLEMENTANDO ELEMENTO</h2>
+<P>Apenas um teste de <span class="negrito">pseudo-elemento</span> O restante do texto não é alterado.</P>
+</body>
+
+</html>
